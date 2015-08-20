@@ -1,7 +1,7 @@
 {
   "name": "yarn-toshokan",
   "version": "0.0.0",
-  "description": "Small description for yarn-toshokan goes here",
+  "description": "Personal yarn pattern libraries",
   "private": true,
   "directories": {
     "doc": "doc",
