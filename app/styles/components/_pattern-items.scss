@@ -1,0 +1,38 @@
+.pattern-items {
+  padding-top: 1em;
+  @include display(flex);
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+
+  .pattern-item {
+    @include display(flex);
+    @include flex-direction(column);
+
+    border: $base-border;
+    border-radius: $base-border-radius;
+    margin: 0 0.5em;
+
+    width: calc(25% - 1em);
+
+    .pattern-image-wrapper {
+      @include flex(1);
+      margin-bottom: -4px;
+    }
+
+    .pattern-image {
+      object-fit: cover;
+    }
+
+    .pattern-footer {
+      text-align: left;
+      height: 68px;
+      padding: 16px;
+      background-color: $dark-gray;
+
+      white-space: nowrap;
+      .top-line, .bottom-line {
+        overflow: hidden;
+      }
+    }
+  }
+}

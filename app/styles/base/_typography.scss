@@ -1,0 +1,83 @@
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-feature-settings: "kern", "liga", "pnum";
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+}
+
+.text-headline {
+  font-size: 24px;
+}
+
+.text-title {
+  font-weight: medium;
+  font-size: 20px;
+}
+
+.text-subheading {
+  font-size: 15px;
+}
+
+.text-body1, .text-body2 {
+  font-size: $base-font-size;
+}
+
+.text-body2 {
+  font-weight: medium;
+}
+
+.text-caption {
+  font-size: 12px;
+  color: shade(#fff, 54%);
+}
+
+.inverted {
+  color: tint(#000, 87%);
+}
+
+p {
+  margin: 0 0 $small-spacing;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($action-color, 25%);
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
